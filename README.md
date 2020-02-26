@@ -11,3 +11,5 @@ Enter `aur-audit`.
 Simply install `bat`, install `aur-audit`, and configure your AUR package manager to use `aur-audit` instead of whatever it was using before (`vim`, `nano`, etc).
 
 Easy!
+
+Available as a [package from the AUR repo](https://aur.archlinux.org/packages/aur-audit-git/).
