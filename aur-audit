@@ -23,7 +23,7 @@ def walk_nonblacklisted(path, dir_blacklist, file_blacklist):
         if child.is_dir():
             if not child.name in dir_blacklist:
                 # recursively walk child directory
-                files += walk_dir(child, dir_blacklist)
+                files += walk_nonblacklisted(child, dir_blacklist)
         else:
             if not child.name in file_blacklist:
                 files += [str(child)]
